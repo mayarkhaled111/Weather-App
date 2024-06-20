@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg my-4">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="image/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="section position-relative py-5">
+    <div class="container mt-5 position-relative">
+      <form action="" class="">
+        <input type="text" id="inp" placeholder="Fined your location..."
+          class="form-control p-3 text-light rounded-pill">
+        <button class="border-0 rounded-pill text-light position-absolute" type="button" id="btn">Find</button>
+      </form>
+    </div>
+    <div class="forcast-table container pt-3">
+      <div class="container position-sticky mt-5">
+        <div class="row" id="weather-result">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="container mt-5 position-relative col-lg-8">
+          <form action="" class="">
+            <input type="text" id="inp" placeholder="Enter your Email to subscribe..."
+              class="form-control p-3 text-light rounded-pill">
+            <button class="border-0 rounded-pill text-light position-absolute ">Subscribe</button>
+          </form>
+          <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+        <div class="icons d-flex align-items-center col-lg-4 justify-content-center">
+          <a href="#" class="d-block d-flex justify-content-center align-items-center me-2"><i
+              class="fa-brands fa-facebook-f fa-xl"></i></a>
+          <a href="#" class="d-block d-flex justify-content-center align-items-center me-2"><i
+              class="fa-brands fa-twitter fa-xl"></i></a>
+          <a href="#" class="d-block d-flex justify-content-center align-items-center me-2"><i
+              class="fa-brands fa-google-plus-g fa-xl"></i></a>
+          <a href="#" class="d-block d-flex justify-content-center align-items-center me-2"><i
+              class="fa-brands fa-pinterest fa-xl"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
