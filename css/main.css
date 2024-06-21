@@ -23,6 +23,25 @@ nav .navbar-collapse .navbar-nav a.active{
     padding-inline: 20px;
     padding-block: 0px;
 }
+.navbar-toggler{
+    padding: 10px;
+    transition: .5s;
+    border: 3px solid none;
+    border-radius: 50%;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler:hover{
+    border-color: #1E9AD8;
+}
+.navbar-toggler i{
+    color: #fff;
+    transition: .5s;
+}
+.navbar-toggler:hover i{
+    color: #1E9AD8;
+}
 .section{
     background-image: url(../image/banner.png);
     background-repeat: no-repeat;
