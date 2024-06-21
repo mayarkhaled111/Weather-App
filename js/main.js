@@ -30,6 +30,7 @@ async function getWeather(city = "cairo") {
       `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`
     );
     var data = await url.json();
+    console.log(data)
     displayWeather(data.current, data.location, data.forecast.forecastday);
   } catch (error) {
     displayError();
@@ -69,6 +70,8 @@ function displayWeather(current, location, forecastDays) {
     wind = 'South-southwest'
   }else if(current.wind_dir == 'NNW'){
     wind = 'North-northwest'
+  }else if(current.wind_dir == 'ENE'){
+    wind = 'East-northeast'
   }else if(current.wind_dir == 'SW'){
     wind = 'Southwest'
   }else if(current.wind_dir == 'SE'){
